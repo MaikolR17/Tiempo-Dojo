@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <div class="navLeft">
+            <h1 class="dojoWeather"> DojoWeather </h1>
+        </div>
+        <div class="navRight">
+            <h2 class="city" onclick="alert('Loading weather report...')"> Burbank </h2>
+            <h2 class="city" onclick="alert('Loading weather report...')"> Chicago </h2>
+            <h2 class="city" onclick="alert('Loading weather report...')"> Dallas </h2>
+        </div>
+    </div>
+    <div class="details">
+        <div class="detailsLeft">
+            <h1> San Jose </h1>
+        </div>
+        <div class="detailsRight">
+            <h3> show temperature in </h3>
+            <select name="degrees" id="whatDegrees"  onchange="change(this)">
+                <option value="°C"> °C </option>
+                <option value="°F"> °F </option>
+            </select>
+        </div>
+    </div>
+    <div class="hr">
+        <hr>
+    </div>
+    <div class="content">
+        <div class="columns">
+            <div class="day">
+                <h2> Today </h2>
+            </div>
+            <div class="img"> 
+                <img class="climate" src="./Imágenes/some_rain.png" alt="Rain Icon">
+            </div>
+            <div class="description">
+                <h3> some rain </h3>
+            </div>
+            <div class="degrees">
+                <div class="leftDegree">
+                    <h3  id="temp1"> 24° </h3>
+                </div>
+                <div class="rightDegree">
+                    <h3  id="temp2"> 18° </h3>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="day">
+                <h2> Tomorrow </h2>
+            </div>
+            <div class="img"> 
+                <img class="climate" src="./Imágenes/some_sun.png" alt="Sun Icon">
+            </div>
+            <div class="description">
+                <h3> some sun </h3>
+            </div>
+            <div class="degrees">
+                <div class="leftDegree">
+                    <h3  id="temp3"> 27°</h3>
+                </div>
+                <div class="rightDegree">
+                    <h3  id="temp4"> 19° </h3>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="day">
+                <h2> Friday </h2>
+            </div>
+            <div class="img"> 
+                <img class="climate" src="./Imágenes/some_clouds.png" alt="Clouds Icon">
+            </div>
+            <div class="description">
+                <h3> some clouds </h3>
+            </div>
+            <div class="degrees">
+                <div class="leftDegree">
+                    <h3  id="temp5"> 21° </h3>
+                </div>
+                <div class="rightDegree">
+                    <h3  id="temp6"> 16° </h3>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="day">
+                <h2> Saturday </h2>
+            </div>
+            <div class="img"> 
+                <img class="climate" src="./Imágenes/some_sun.png" alt="Sun Icon">
+            </div>
+            <div class="description">
+                <h3> some sun </h3>
+            </div>
+            <div class="degrees">
+                <div class="leftDegree">
+                    <h3  id="temp7"> 26° </h3>
+                </div>
+                <div class="rightDegree">
+                    <h3  id="temp8"> 21° </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box" id="acceptCookies">
+        <div class="cookies">
+            <div class="cookieIcon">
+                <img src="./Imágenes/cookie.png" alt="Cookie Icon">
+            </div>
+            <div class="text">
+                <div class="title">
+                    <h2> Stop! Cookie time </h2>
+                </div>
+                <div>
+                    <h4 class="textContent"> We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a> </h4>
+                </div>
+            </div>
+            <div>
+                <button  class="aceptButton" onclick="remove(this)"> I Accept </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
